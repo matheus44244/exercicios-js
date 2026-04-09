@@ -25,7 +25,7 @@ export function calcularDesconto(preco, percentual) {
 
 // Exercício 3 — verificarAprovacao
 export function verificarAprovacao(nota) {
-  if (nota >= 60) {
+  if (nota <= 100 && nota >= 60) {
     return "aprovado";
   } else if (nota >= 40) {
     return "recuperação";
@@ -34,7 +34,7 @@ export function verificarAprovacao(nota) {
   }
 }
 
-// Exercício 4 — somarPares
+// Exercício 4 — somarPares 
 export function somarPares(numeros) {
   let soma = 0;
   for (let num of numeros) {
@@ -47,5 +47,11 @@ export function somarPares(numeros) {
 
 // Exercício 5 — contarLetra
 export function contarLetra(texto, letra) {
-  // escreva seu código aqui
+  let contador = 0;
+  for (let char of texto) {
+    if (char === letra) {
+      contador++;
+    }
+  }
+  return contador;
 }
