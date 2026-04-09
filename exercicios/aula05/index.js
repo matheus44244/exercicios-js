@@ -9,9 +9,9 @@
 export function classificarIdade(idade) {
 
 if (idade >= 18) {
-  console.log('Adulto');
+  return('Adulto');
 } else if (idade >= 12) {
-  console.log('Adolescente');
+  return('Adolescente');
 } else {
   return ('Criança');
 }
