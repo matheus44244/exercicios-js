@@ -7,12 +7,13 @@
 
 // Exercício 1 — criarSaudacao
 export function criarSaudacao(nome) {
-  // escreva seu código aqui
+  return `Olá, ${nome}!`;
 }
 
 // Exercício 2 — filtrarAprovados
 export function filtrarAprovados(alunos) {
-  // escreva seu código aqui
+  const filtrarAprovados = alunos.filter((aluno) => aluno.nota >= 60);
+  return filtrarAprovados;
 }
 
 // Exercício 3 — extrairNomes
