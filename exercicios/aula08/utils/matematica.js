@@ -20,6 +20,6 @@ export function dividir(a, b) {
   if (b !== 0) {
     return a / b
   } else {
-    throw new Error("Divisão por zero não é permitida.")
+    return null; // não faz sentido dividir por zero
   }
 }
